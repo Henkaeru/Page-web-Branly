@@ -1,9 +1,15 @@
 body {
     font-family:'Cormorant Garamont';
-    margin: 0 10% 0 10%;
+    margin: 0;
     padding: 0;
     background-color: #F7F4F3;
+    font-weight:500;
 }
+
+@font-face {
+    font-family: "Cormorant Garamont";
+    src: url(../fonts/CormorantGaramond-VariableFont_wght.ttf);
+  }
 
 div {
     margin: 0;
@@ -35,5 +41,68 @@ hr {
 }
 
 /*------------------------------------------------------------------------*/
+/*                              HEADER                                    */
 /*------------------------------------------------------------------------*/
+
+header {
+    align-content: center;
+    background-color: #ca2b2b;
+}
+
+header > div {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.menu > nav > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.menu > nav > ul > li {
+    text-align: center;
+    display: inline-flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+
+.menu > nav > ul > li > a {
+    margin: 0;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+.menu > nav > ul > li > a:link {
+    background-color: white;
+    color: #4D4542;
+}
+
+.menu > nav > ul > li > a:hover {
+    background-color: #EFB921;
+    color: #4D4542;
+}
+
 /*------------------------------------------------------------------------*/
+/*                              HEADER                                    */
+/*------------------------------------------------------------------------*/
+
+main {
+    margin: 0 10% 0 10%;
+}
+
+/*------------------------------------------------------------------------*/
+/*                              FOOTER                                    */
+/*------------------------------------------------------------------------*/
+
+footer {
+    background-color: #ca2b2b;
+}
+
+footer > div {
+    display: inline-flex;
+}
