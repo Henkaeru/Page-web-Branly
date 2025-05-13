@@ -49,9 +49,25 @@ header {
     background-color: #ca2b2b;
 }
 
+header > .logo_Branly > img {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: block;
+}
+
 header > div {
     display: inline-flex;
     flex-direction: row;
+    position: relative;
+    z-index: 1;
+    align-content: center;
+    text-align: center;
+    height: 200px;
+}
+
+header > div > div > h1 {
+    font-variant-caps: all-small-caps;
 }
 
 .menu > nav > ul {
@@ -105,4 +121,13 @@ footer {
 
 footer > div {
     display: inline-flex;
+}
+
+footer > div{
+    position: static;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
 }
