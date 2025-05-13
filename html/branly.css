@@ -35,7 +35,7 @@ hr {
     padding: 0;
 }
 
-.logo_Branly > img {
+header .logo_Branly > img {
     width: 70px;
     height: 70px;
 }
@@ -43,6 +43,7 @@ hr {
 /*------------------------------------------------------------------------*/
 /*                              HEADER                                    */
 /*------------------------------------------------------------------------*/
+
 
 header {
     align-content: center;
@@ -55,6 +56,8 @@ header > .logo_Branly > img {
     width: 100%;
     overflow: hidden;
     display: block;
+    width: 70px;
+    height: 70px;
 }
 
 header > div {
@@ -103,7 +106,7 @@ header > div {
 }
 
 /*------------------------------------------------------------------------*/
-/*                              HEADER                                    */
+/*                               MAIN                                     */
 /*------------------------------------------------------------------------*/
 
 main {
@@ -116,6 +119,15 @@ main {
 
 footer {
     background-color: #ca2b2b;
+}
+
+footer .logo_Branly > img {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    width: 150px;
+    height: 150px;
 }
 
 footer > div {
