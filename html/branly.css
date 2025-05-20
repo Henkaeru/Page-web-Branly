@@ -128,16 +128,43 @@ main {
     padding-top: 130px;
 }
 
+.chute img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50px;
+    z-index: -1;
+    position: absolute;
+    left: 65.8%;
+    top: 200px;
+}
+
+.rideau img {
+    width: 60px;
+    height: auto;
+    z-index: -2;
+    position: absolute;
+    left: 65.7%;
+    top: 125px;
+}
+
+.marche img {
+    width: auto;
+    height: 50px;
+    border-radius: 50px;
+    z-index: 1;
+    position: absolute;
+    left: 30%;
+    top: 529px;
+}
 
 .presentation {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 30px;
-    padding-bottom: 30px;
+    gap: 40px;
+    padding-bottom: 40px;
     
 }
-
 
 .texte {
     flex: 1;
