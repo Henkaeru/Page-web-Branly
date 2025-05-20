@@ -125,7 +125,7 @@ header > div {
 
 main {
     margin: 0 10% 0 10%;
-    padding-top: 150px;
+    padding-top: 130px;
 }
 
 
@@ -133,8 +133,9 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 20px;
-    padding-bottom: 80px;
+    gap: 30px;
+    padding-bottom: 30px;
+    
 }
 
 
@@ -142,20 +143,30 @@ main {
     flex: 1;
     padding-right: 20px;
     font-size: large;
+    background-color: rgb(223, 223, 223);
+    padding: 5px 20px;
+    border-radius: 7px;
 }
 
-
 .portrait {
-    width: 300px;
-    height: auto;
+    width: auto;
+    height: 400px;
 }
 
 
 .portrait img {
     width: 100%;
-    height: auto;
-    border-radius: 10px;
+    height: 100%;
+    border-radius: 7px;
 }
+
+.programme {
+    padding-bottom: 80px;
+    background-color: rgb(223, 223, 223);
+    padding: 5px 20px;
+    border-radius: 7px;
+}
+
 
 /*------------------------------------------------------------------------*/
 /*                              FOOTER                                    */
