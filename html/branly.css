@@ -21,6 +21,9 @@ figure {
     padding: 0;
 }
 
+p {
+    font-size: large;
+}
 img {
     margin: 0;
     padding: 0;
@@ -46,9 +49,17 @@ header .logo_Branly > img {
 
 
 header {
-    align-content: center;
+    top: 0;
     background-color: #ca2b2b;
     border-radius: 0 0 15px 15px;
+    position: fixed;
+    padding: 0;
+    width: 100%;
+}
+
+.menu > nav {
+    margin : 0 0 0 70px;
+    padding: 0;
 }
 
 header > .logo_Branly > img {
@@ -72,13 +83,11 @@ header > div {
 
 .menu > nav > ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     display: inline-flex;
     flex-direction: row;
     justify-content: right;
     column-gap: 20px;
-    margin: 20px;
+    margin-top: 20px;
 }
 
 .menu > nav > ul > li {
@@ -93,6 +102,7 @@ header > div {
     margin: 0;
     padding: 2% 20px;
     border-radius: 7px;
+    font-size: large;
 }
 
 .menu > nav > ul > li > a:link {
@@ -105,12 +115,46 @@ header > div {
     color: #4D4542;
 }
 
+.menu > nav > ul > li > a:visited {
+    color: #4D4542;
+}
+
 /*------------------------------------------------------------------------*/
 /*                               MAIN                                     */
 /*------------------------------------------------------------------------*/
 
 main {
     margin: 0 10% 0 10%;
+    padding-top: 150px;
+}
+
+
+.presentation {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding-bottom: 80px;
+}
+
+
+.texte {
+    flex: 1;
+    padding-right: 20px;
+    font-size: large;
+}
+
+
+.portrait {
+    width: 300px;
+    height: auto;
+}
+
+
+.portrait img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
 /*------------------------------------------------------------------------*/
@@ -119,15 +163,11 @@ main {
 
 footer {
     background-color: #ca2b2b;
-}
-
-footer .logo_Branly > img {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    display: block;
-    width: 150px;
-    height: 150px;
+    text-decoration: none;
+    padding: 0 10px 10px 10px;
+    border-radius: 15px 15px 0 0;
+    display: flex;
+    justify-content: center;
 }
 
 footer > div {
@@ -141,4 +181,9 @@ footer > div{
     justify-content: space-between;
     align-items: center;
     width: 80%;
+}
+
+footer > div > div > nav > img {
+    width : 100px;
+    height: 100px;
 }
