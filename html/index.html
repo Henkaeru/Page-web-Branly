@@ -22,14 +22,27 @@
                                     <li><a href="#programme">Le Programme</a></li>
                                     <li><a href="#vote">Votons camarades</a></li>
                                     <li><a href="#">Donnez des sous !!!</a></li>
-                                    <li><a href="#">Connexion (A FAIRE)</a></li>
+                                    <li><a href="#" id="loginBtn">Be you, be proud of you</a></li>
                               </ul>
                               </nav>
                         </div>
                   </div>
             </div>
+            <div id="loginOverlay" class="hidden">
+                  <form id="loginForm">
+                    <label>Nom d'utilisateur</label>
+                    <input type="text" name="username" required>
+              
+                    <label>Mot de passe</label>
+                    <input type="password" name="password" required>
+              
+                    <button type="submit">Se connecter</button>
+              
+                    <p>Pas de compte ? <a href="#">Créer un compte</a></p>
+                  </form>
+                </div>
       </header>
-      <main>
+      <main><!--
             <div class="chute">
                   <img src="../images/falling_cat.png" alt="Chute de chat">
             </div>
@@ -38,12 +51,12 @@
             </div>
             <div class="marche">
                   <img src="../images/walking_cat.png" alt="chat ki marche">
-            </div>
+            </div>-->
             <section>
                   <div class="presentation" id="presentation">
                         <div class="texte">
                               <h2> Branly 2025 — La stabilité incarnée, l’avenir en tête </h2>
-                              
+
                               <p>
                                     Il n’a jamais eu besoin de discours pour convaincre, ni de CV pour impressionner. 
                                     Devant le CROUS, à la croisée des chemins étudiants, M. Branly règne depuis des 
@@ -199,3 +212,13 @@
       // Insérer le numéro de téléphone formaté dans l'élément avec l'ID "phoneNumber"
       document.getElementById('phoneNumber').textContent = phoneNumber;
   </script>
+
+
+<script>
+      const loginBtn = document.getElementById('loginBtn');
+      const loginOverlay = document.getElementById('loginOverlay');
+
+      loginBtn.addEventListener('click', () => {
+      loginOverlay.classList.toggle('visible');
+      });
+</script>
