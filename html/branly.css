@@ -232,7 +232,25 @@ footer > div > div > nav > img {
     height: 100px;
 }
 
+footer li {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 5px;
+    font-size:large;
+}
 
+
+
+footer li > a:hover {
+    background-color: #EFB921;
+    color: #000000;
+    padding: 3px;
+    border-radius: 7px;
+}
+
+footer li > a:visited {
+    color: #000000;
+}
 
 /*------------------------------------------------------------------------*/
 /*                              OVERLAY                                    */
