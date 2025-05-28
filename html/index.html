@@ -12,9 +12,8 @@
 
       <header>
             <div>
-                  <div class="logo_Branly"><img src="../images/logoBranly.png" alt="logo Branly"></div>
+                  <div class="logo_Branly"><a href="index.html"></a><img src="../images/logoBranly.png" alt="logo Branly"></a></div>
                   <div>
-                        <!-- <h1>Branly, chat du Crous et ... dieu vivant</h1> -->
                         <div class="menu">
                               <nav>
                               <ul>
@@ -36,7 +35,7 @@
                     <label>Mot de passe</label>
                     <input type="password" name="password" required>
               
-                    <button type="submit">Se connecter</button>
+                    <button type="submit" window.location.href = "admin.html">Se connecter</button>
               
                     <p>Pas de compte ? <a href="#">Créer un compte</a></p>
                   </form>
@@ -224,3 +223,15 @@
       loginOverlay.classList.toggle('visible');
       });
 </script>
+
+<script>
+      const loginForm = document.getElementById('loginForm');
+  
+      loginForm.addEventListener('submit', function(event) {
+          event.preventDefault(); // Empêche le rechargement de la page
+          // Optionnel : tu peux afficher un petit message ou animation ici
+  
+          // Redirige vers la page admin
+          window.location.href = "admin.html";
+      });
+  </script>
